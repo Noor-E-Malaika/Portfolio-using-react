@@ -1,0 +1,99 @@
+#hero {
+    max-height: 100vh;
+    margin: 1rem 2rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 4rem 5rem;
+}
+
+.bg {
+    max-height: 100%;
+    height: 100vh;
+    margin-right: 20vh;
+    padding-top: 10vh;
+    width: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    z-index: -1;
+}
+
+.introContent {
+    cursor: pointer;
+    width: 50vw; 
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    margin: 1rem;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: yellow;
+}
+
+.introPara {
+    margin: 1rem;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.connect {
+    background: #FFFAFA;
+    margin: 1rem;
+    color: black;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    width: fit-content;
+    padding: 20px 40px;
+}
+
+@media (max-width: 1200px) {
+    #hero {
+      padding: 3rem; 
+    }
+  
+    .bg {
+            left: -10vw;
+        }
+  
+    .introContent {
+      width: 80%; 
+      font-size: 2.5rem; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bg{
+        right: -20vw;
+    }
+    #hero {
+      padding: 2rem; 
+    }
+  
+    .introContent {
+      width: 90%; 
+      font-size: 2rem; 
+    }
+  
+    .connect {
+      padding: 15px 30px; 
+      font-size: 18px; 
+    }
+  }
+

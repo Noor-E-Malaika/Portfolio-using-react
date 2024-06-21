@@ -1,0 +1,156 @@
+/*.navbar h1 {
+        height: 5rem;
+        padding: 2rem 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        color: yellow; 
+        font-size: 2.5rem; 
+    
+    
+  }
+  
+  .navbar{
+     background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-menu{
+    display: flex;
+    margin: 1rem;
+    cursor: pointer;
+    align-items: center ;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-menu li:hover{
+    color: yellow;
+    margin: 1rem;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.nav-connect{
+    margin-top: 20px;
+    padding: 20px  40px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 22px;
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+
+#home, #about, #portfolio, #contact {
+    padding-top: 60px; 
+    padding-bottom: 20px;
+  }
+  
+  .section {
+    padding: 100px 20px; 
+    min-height: 100vh; 
+  }
+
+  .active{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+  }*/
+
+  .navbar {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar h1 {
+    color: yellow; 
+    font-size: 2.5rem;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+  }
+  
+  .nav-menu li:hover {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+  }
+  
+  .nav-connect {
+    padding: 20px 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 22px;
+    background: white;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .nav-connect:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: yellow;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      background: rgb(17, 17, 17);
+      text-align: center;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-connect {
+      display: none;
+    }
+  }
+  
